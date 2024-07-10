@@ -1,4 +1,5 @@
-import { Navbar } from "./navbar/navbar"
+import { Hero } from "./components/hero"
+import { Navbar } from "./components/navbar"
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Hero/>
     </>
   )
 }

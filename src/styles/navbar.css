@@ -2,13 +2,14 @@
   position: fixed;
   width: 100%;
   background: var(--color5);
+  z-index: 4;
 }
 .nav-container .nav-content{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    max-width: 1400px;
-    margin: 0 10em;
+    max-width: 1100px;
+    margin: 0 auto;
     height: 60px;
 }
 .nav-container .nav-content .logo{
@@ -67,13 +68,13 @@
 .nav-container .nav-content .fa-solid {
     display: none;
 }
-@media (max-width:1024px) {
+@media (max-width:1124px) {
     .nav-container .nav-content{
-        margin: 0 5em;
+        margin: 0 3em;
         
     }  
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .nav-container .nav-content{
         margin: 0;
         justify-content: center;
