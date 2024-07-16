@@ -1,6 +1,7 @@
 import { About } from "./components/about"
 import { Hero } from "./components/hero"
 import { Navbar } from "./components/navbar"
+import { Portafolio } from "./components/portafolio"
 import { Services } from "./components/services"
 
 
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <About/>
       <Services/>
+      <Portafolio/>
     </>
   )
 }
