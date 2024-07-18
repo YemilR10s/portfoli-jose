@@ -1,14 +1,17 @@
 import { useState } from "react"
 import "../styles/portafolio.css"
 import { CardsData } from "../utils/portafolioData"
+import { PortafolioCard } from "./portafolioCard"
 
 
 export const Portafolio = () => {
 
     const [category, setCategory] = useState('All Works')
+    const [activeButton, setActiveButton] = useState(true)
    
     const categoryChange = (categorySelect)=>{
         setCategory(categorySelect)
+        setActiveButton(!activeButton)
     }
 
     const filteredCards = category === 'All Works'
@@ -27,19 +30,19 @@ export const Portafolio = () => {
                 <h2 className="creative-works-h2">Creative Works</h2>
                 <div className="buttons-content">
 
-                    <button 
+                    <button  
                     onClick={()=> categoryChange("All Works")}>
                     All Works
                     </button>
-                    <button 
-                    onClick={()=> categoryChange("Logos")}>
+                    <button  
+                    onClick={()=> categoryChange("Logo")}>
                     Logos
                     </button>
-                    <button 
+                    <button  
                     onClick={()=> categoryChange("Design")}>
                     Design
                     </button>
-                    <button 
+                    <button  
                     onClick={()=> categoryChange("Mobile")}>
                     Mobile
                     </button>
@@ -49,7 +52,7 @@ export const Portafolio = () => {
             {/* cards */}
             <div className="cards-content">
                 {filteredCards.map((item, index)=>(
-                    <Portafolio key={index} item={item} />
+                    <PortafolioCard key={index} item={item} />
                 ))}
             </div>
 

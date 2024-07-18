@@ -1,8 +1,8 @@
 .portafolio-section{
     width: 100%;
-    height: 800px;
     background: var(--color3);
-    padding-top: 100px;
+    padding: 4em 0;
+    
 
    
 }
@@ -11,8 +11,6 @@
 .portafolio-content{
     margin: 0 auto;
     max-width: 1100px;
-    height: 700px;
-    border: 3px black solid ;
 }
 
 .portafolio-h3{
@@ -40,5 +38,112 @@
     background: var(--color7);
     font-weight: 500;
 }
+.buttons-content .activeButton{
+    background: var(--color2);
+    color: var(--color7);
+
+}
 
 /* Cards */
+.cards-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 350px;
+    background: var(--color7);
+    padding: 15px;
+    border-radius: 20px;
+
+}
+.card-title{
+    color: var(--color6);
+}
+.card-description{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.card-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+.card-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:1100px) {
+
+    .portafolio-section{
+        width: 100%;
+    
+       
+    }
+    /* portafolio header */
+    .portafolio-content{
+    padding: 0 8em;
+    } 
+    /* h2 and buttons content */
+    .buttons-content button{
+    margin: 10px;
+    }
+    /* Cards */
+    .cards-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    }  
+    
+}
+@media (max-width:900px){
+  /* portafolio header */
+  .portafolio-content{
+    padding: 0 3em;
+    } 
+    /* Cards */
+    .cards-content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+@media (max-width:700px){
+
+
+}
+@media (max-width:400px){
+    .portafolio-section{
+        padding: 0em;
+    }
+  /* portafolio header */
+  .portafolio-content{
+    padding: 0em;
+    }
+    /* h2 and buttons content */
+    .creative-worksAndButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    }
+    .creative-works-h2{
+    font-size: 2em;
+    font-weight: 400;
+    }
+
+    .buttons-content button{
+    padding: 10px 30px;
+    font-weight: 500;
+    }
+}
