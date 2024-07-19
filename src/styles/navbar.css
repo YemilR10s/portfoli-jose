@@ -97,6 +97,9 @@
         transition: 0.6s ease;
         
     }
+    .nav-container .nav-content .ul-items li a{
+        color: var(--color7);
+    }
     .nav-container .nav-content .ul-items.active{
         left: 0;
         

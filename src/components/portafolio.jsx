@@ -20,7 +20,7 @@ export const Portafolio = () => {
     item.category === category)
   return (
     <>
-    <section className="portafolio-section">
+    <section className="portafolio-section" id="portfolio">
 
         <div className="portafolio-content">
 

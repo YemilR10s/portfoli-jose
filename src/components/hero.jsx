@@ -7,7 +7,7 @@ export const Hero = () => {
 
   return (
     <>
-    <header>
+    <header id="home">
 
                     {/* hero container */}
     <div className="hero-container">

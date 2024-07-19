@@ -47,6 +47,7 @@ header{
 }
 .text-content .hire-me-button{
     background: var(--color1);
+    color: var(--color7);
     width: 150px;
     padding: 10px;
     border: 0;

@@ -7,7 +7,7 @@ import development from "/services-development.png"
 export const Services = () => {
   return (
     <>
-    <section className="services-section">
+    <section className="services-section" id="services">
 
         <div className="services-container">
 
