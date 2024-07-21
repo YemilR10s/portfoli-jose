@@ -1,4 +1,5 @@
 import "../styles/contact.css"
+import {motion} from "framer-motion"
 
 export const Contact = () => {
   return (
@@ -6,12 +7,21 @@ export const Contact = () => {
     
     <section className="contact-section" id="contact">
       <div className="contact-content">
-        <div className="map">
+        <motion.div 
+          whileInView={{opacity:[0,1],y:[100, 0]}}
+          transition={{duration: 1}}
+          viewport={{once:true}}
+        className="map">
         <iframe 
            
           src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=santiago%20bernabeu+(Portafolio%20Jose)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
-        </div>
-        <div className="form">
+        </motion.div>
+
+        <motion.div 
+          whileInView={{opacity:[0,1],y:[100, 0]}}
+          transition={{duration: 1}}
+          viewport={{once:true}}
+        className="form">
           <form action="" onSubmit={(e)=>{
               e.preventDefault()
             }}>
@@ -28,7 +38,7 @@ export const Contact = () => {
               
             className="form-button">Submit</button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
     

@@ -3,6 +3,8 @@ import marketing from "/services-marketing.png"
 import design from "/services-design.png"
 import uxui from "/services-ux-ui.png"
 import development from "/services-development.png"
+import {motion} from "framer-motion"
+
 
 export const Services = () => {
   return (
@@ -11,10 +13,28 @@ export const Services = () => {
 
         <div className="services-container">
 
-        <h3 className="services-h3">Services</h3>
-        <h2 className="services-h2">What I do</h2>
+        <motion.h3 
+        whileInView={{opacity:[0,1],y:[100,0]}}
+        transition={{duration:1}}
+        viewport={{once: true}}
+        className="services-h3">
+        Services
+        </motion.h3>
+
+        <motion.h2 
+        whileInView={{opacity:[0,1],y:[100,0]}}
+        transition={{duration:1}}
+        viewport={{once: true}}
+        className="services-h2">
+        What I do
+        </motion.h2>
+
         <div className="services-boxes">
-            <div className="services-box">
+            {/* box */}
+            <motion.div              whileInView={{opacity:[0,1],y:[100,0]}}
+             transition={{duration:1}}
+             viewport={{once: true}}
+            className="services-box">
                 <img className="boxes-image"  
                 src={marketing} alt="marketing services" />
                 <h3 className="boxes-h3">Digital Marketing</h3>
@@ -23,8 +43,12 @@ export const Services = () => {
                     Read More
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
-            </div>
-            <div className="services-box">
+            </motion.div>
+            {/* box */}
+            <motion.div            whileInView={{opacity:[0,1],y:[100,0]}}
+            transition={{duration:1.2}}
+            viewport={{once: true}}
+            className="services-box">
             <img className="boxes-image"  
                 src={design} alt="services design" />
                 <h3 className="boxes-h3" >Product Design</h3>
@@ -33,8 +57,13 @@ export const Services = () => {
                     Read More
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
-            </div>
-            <div className="services-box">
+            </motion.div>
+            {/* box */}
+            <motion.div 
+             whileInView={{opacity:[0,1],y:[100,0]}}
+             transition={{duration:1.4}}
+             viewport={{once: true}}
+            className="services-box">
             <img className="boxes-image"  
                 src={uxui} alt="ux ui services" />
                 <h3 className="boxes-h3">UI/UX Design</h3>
@@ -43,8 +72,13 @@ export const Services = () => {
                     Read More
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
-            </div>
-            <div className="services-box">
+            </motion.div>
+            {/* box */}
+            <motion.div            
+             whileInView={{opacity:[0,1],y:[100,0]}}
+             transition={{duration:1.6}}
+             viewport={{once: true}}
+            className="services-box">
             <img className="boxes-image"  
                 src={development} alt="development services" />
                 <h3 className="boxes-h3">Web Development</h3>
@@ -53,7 +87,7 @@ export const Services = () => {
                     Read More
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
-            </div>
+            </motion.div>
         </div>
         </div>
     </section>

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "../styles/about.css"
+import {motion} from "framer-motion"
 
 export const About = () => {
   return (
@@ -7,7 +8,11 @@ export const About = () => {
     <section className="about-section" id="about">
         <div className="about-container">
 
-            <div className="about-left-content">
+            <motion.div 
+            whileInView={{opacity:[0,1]}}
+            transition={{duration:2}}
+            viewport={{once: true}}
+            className="about-left-content">
 
                 <div className="dribble-box">
                 <i className="fa-brands fa-dribbble"></i>
@@ -26,19 +31,44 @@ export const About = () => {
                 <span className="linkedin-span">Linkedin</span>
                 <p className="linkedin-box-p">20k</p>
                 </div>
-            </div>
+            </motion.div>
 
 
             <div className="about-right-content">
-                <h3 className="about-me-h3">About Me</h3>
-                <h2 className="about-me-h2">CREATIVE DESIGNE WITH MODERN TECHNIQUES</h2>
-                <p className="about-me-p">Hello I am Jose rodriguez, I'm a web designer and developer based in NYC, USA.
+
+                <motion.h3 
+                whileInView={{opacity:1, y:[100,0]}}
+                transition={{duration:0.5}}
+                viewport={{once: true}}
+                className="about-me-h3">
+                About Me
+                </motion.h3>
+
+                <motion.h2 
+                whileInView={{opacity:1, y:[100,0]}}
+                transition={{duration:0.5}}
+                viewport={{once: true}}
+                className="about-me-h2">
+                CREATIVE DESIGNE WITH MODERN TECHNIQUES
+                </motion.h2>
+
+                <motion.p 
+                whileInView={{opacity:1, y:[100,0]}}
+                transition={{duration:0.5}}
+                viewport={{once: true}}
+                className="about-me-p">
+                    Hello I am Jose rodriguez, I'm a web designer and developer based in NYC, USA.
                     I have passion for web designe and love to create a web mobile devices. 
                     if you have a web based project that you want to get stared.
-                </p>
+                </motion.p>
+
                 <div className="about-right-boxes">
 
-                    <div className="about-right-box1">
+                    <motion.div 
+                    whileInView={{opacity:1, y:[100,0]}}
+                    transition={{duration:0.5}}
+                    viewport={{once: true}}
+                    className="about-right-box1">
                         <div className="icons">
                         <i className="fa-regular fa-user"></i>
                         <i className="fa-regular fa-envelope"></i>
@@ -49,11 +79,15 @@ export const About = () => {
                             <p>Info@jose.com</p>
                             <p>381-461-034</p>
                         </div>
-                    </div>
-                    <div className="about-right-box2">
+                    </motion.div>
+                    <motion.div 
+                    whileInView={{opacity:1, y:[100,0]}}
+                    transition={{duration:0.5}}
+                    viewport={{once: true}}
+                    className="about-right-box2">
                         <span>10+</span>
                         <p>Years Of Experience</p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
