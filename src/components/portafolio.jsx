@@ -47,28 +47,28 @@ export const Portafolio = () => {
                 <div className="buttons-content">
 
                     <motion.button
-                    whileInView={{x:[100,0]}}
+                    whileInView={{y:[100,0]}}
                     transition={{duration:1}} 
                     viewport={{once: true}} 
                     onClick={()=> categoryChange("All Works")}>
                     All Works
                     </motion.button>
                     <motion.button
-                    whileInView={{x:[100,0]}}
+                    whileInView={{y:[100,0]}}
                     transition={{duration:1.2}}
                     viewport={{once: true}}  
                     onClick={()=> categoryChange("Logo")}>
                     Logos
                     </motion.button>
                     <motion.button
-                    whileInView={{x:[100,0]}}
+                    whileInView={{y:[100,0]}}
                     transition={{duration:1.4}}
                     viewport={{once: true}}  
                     onClick={()=> categoryChange("Design")}>
                     Design
                     </motion.button>
                     <motion.button
-                    whileInView={{x:[100,0]}}
+                    whileInView={{y:[100,0]}}
                     transition={{duration:1.6}}
                     viewport={{once: true}}  
                     onClick={()=> categoryChange("Mobile")}>

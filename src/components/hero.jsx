@@ -58,14 +58,14 @@ export const Hero = () => {
                 <motion.button 
                 whileInView={{opacity:[0,1], x:[-200,0]}}
                 viewport={{once:true}}
-                transition={{duration:0.7}}
+                transition={{duration:1}}
                 className="hire-me-button">
                 HIRE ME
                 </motion.button>
 
                 <motion.img 
                 initial={{scale: [0,0,0,0,0]}}
-                animate={{scale: [1,1.5,1.5,1.5,1], rotate:[0,0,300,360, 0]}}
+                animate={{scale: [0,1.5,1.5,1.5,1], rotate:[0,0,300,360, 0]}}
                 transition={{
                   repeat: Infinity,
                   duration:5,
@@ -81,7 +81,7 @@ export const Hero = () => {
             <div className="image-content">
 
                 <motion.img 
-                whileInView={{opacity:[0,1]}}
+                whileInView={{opacity:[0,1], scale:[0,1]}}
                 viewport={{once:true}}
                 transition={{duration: 2}}
                 className="figure1-image" 

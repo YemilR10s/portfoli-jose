@@ -2,6 +2,8 @@
     width: 100%;
     background: var(--color5);
     padding-top: 2em;
+    overflow: hidden;
+
 }
 .contributors-content{
     max-width: 1100px;
