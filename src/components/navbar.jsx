@@ -24,13 +24,12 @@ export const Navbar = () => {
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li> 
-           {/*  <select className="languaje-buton">
-            <option type='button'>Es</option>
-            <option type='button'>en</option>
-            </select> */}
         </ul>
 
-        <div onClick={showToggle} className= {show ? "fa-solid fa-bars  " :"fa-solid fa-xmark"}>
+        <div 
+          onClick={showToggle} 
+          className= {show ? "fa-solid fa-bars" 
+          :"fa-solid fa-xmark"}>
 
         </div>
      </div>

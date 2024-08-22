@@ -30,7 +30,8 @@
     font-weight: 400;
 }
 
-.buttons-content button{
+/* Estilos generales para los botones */
+.buttons-content button {
     padding: 10px 30px;
     margin: 0 30px;
     cursor: pointer;
@@ -38,12 +39,21 @@
     border-radius: 10px;
     background: var(--color7);
     font-weight: 500;
-}
-.buttons-content .activeButton{
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Estilo para el botón activo */
+  .activeButton {
+    background: var(--color2) !important;
+    color: var(--color7) !important;
+  }
+  
+  /* Estilo para el hover */
+  .buttons-content button:hover {
     background: var(--color2);
     color: var(--color7);
-
-}
+  }
+  
 
 /* Cards */
 .cards-content{

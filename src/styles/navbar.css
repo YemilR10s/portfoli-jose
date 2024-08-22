@@ -3,6 +3,7 @@
   width: 100%;
   background: var(--color5);
   z-index: 4;
+  box-shadow: 0 0 10px -5px;
 
 }
 .nav-container .nav-content{
