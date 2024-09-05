@@ -95,6 +95,7 @@ export const Portafolio = () => {
       </div>
     </section>
   );
+  
 };
 
 
